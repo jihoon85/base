@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mariadb://localhost:3306/msg?characterEncoding=UTF-8&serverTimezone=UTC
+      username: admin
+      password: admin
+      driver-class-name: org.mariadb.jdbc.Driver
+  liquibase:
+    change-log: classpath:/db/changelog.xml
+    enabled: true
